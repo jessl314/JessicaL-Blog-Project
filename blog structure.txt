@@ -13,3 +13,9 @@ resources: easiest, link resume, GitHub, maybe my hackathon and vgdc links (prob
 
 
 fun stuff about me???? like idk my hobbies, a list of my favorite tv shows etc.
+
+
+Navbar
+- use Bootstrap Navbar + React Routes
+Bootstrap: Handles the visual design and helps users switch between menu items (links).
+React Router: Handles the functional side—it determines which component to render when a user clicks on a menu item, enabling dynamic updates to the view.

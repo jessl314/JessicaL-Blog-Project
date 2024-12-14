@@ -1,0 +1,15 @@
+blog structure
+
+front page something pretty??? this could be the general about me, elevator pitch also description of tabs
+we are going to need to wireframe this, probs need a picture of me on there, like my linkedin pic 
+
+
+
+tabs:
+
+blog: as in I can actually create posts
+
+resources: easiest, link resume, GitHub, maybe my hackathon and vgdc links (probably venushacks and pitch project, not zotjam or zothacks...), linkedin, Instagram, idk. sort of like a link tree lol
+
+
+fun stuff about me???? like idk my hobbies, a list of my favorite tv shows etc.

@@ -13,7 +13,7 @@ function NavBar() {
             <Container fluid className="w-100">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="justify-content-center w-100">
+                    <Nav className="mx-auto w-100">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#about">About Me</Nav.Link>
                         {/*Projects Dropdown Component, each element is a project that I want to showcase */}

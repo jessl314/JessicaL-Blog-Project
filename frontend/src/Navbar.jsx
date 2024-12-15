@@ -10,7 +10,7 @@ function NavBar() {
     return (
         <Navbar expand="lg" className = "bg-body-tertiary w-100">
             {/*fluid container helps navbar to expand entire width*/}
-            <Container fluid>
+            <Container fluid className="w-100">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="justify-content-center w-100">
@@ -18,8 +18,8 @@ function NavBar() {
                         <Nav.Link href="#about">About Me</Nav.Link>
                         {/*Projects Dropdown Component, each element is a project that I want to showcase */}
                         <NavDropdown title="Projects" id = "basic-nav-dropdown">
-                            <NavDropdown.Item href="/Speepy"></NavDropdown.Item>
-                            <NavDropdown.Item href="/Grin"></NavDropdown.Item>
+                            <NavDropdown.Item href="/Speepy">Speepy</NavDropdown.Item>
+                            <NavDropdown.Item href="/Grin">Grin</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

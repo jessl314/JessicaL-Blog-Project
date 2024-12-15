@@ -8,13 +8,15 @@ Navbar:
 */ 
 function NavBar() {
     return (
-        <Navbar expand="lg" className = "bg-body-tertiary">
-            <Container>
+        <Navbar expand="lg" className = "bg-body-tertiary w-100">
+            {/*fluid container helps navbar to expand entire width*/}
+            <Container fluid>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="justify-content-center">
+                    <Nav className="justify-content-center w-100">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#about">About Me</Nav.Link>
+                        {/*Projects Dropdown Component, each element is a project that I want to showcase */}
                         <NavDropdown title="Projects" id = "basic-nav-dropdown">
                             <NavDropdown.Item href="/Speepy"></NavDropdown.Item>
                             <NavDropdown.Item href="/Grin"></NavDropdown.Item>

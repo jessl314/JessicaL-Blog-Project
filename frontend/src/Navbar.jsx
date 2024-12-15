@@ -12,12 +12,12 @@ function NavBar() {
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav classNAme="mx-auto">
+                    <Nav className="justify-content-center">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#about">About Me</Nav.Link>
                         <NavDropdown title="Projects" id = "basic-nav-dropdown">
                             <NavDropdown.Item href="/Speepy"></NavDropdown.Item>
-
+                            <NavDropdown.Item href="/Grin"></NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
@@ -26,3 +26,5 @@ function NavBar() {
 
     );
 }
+
+export default NavBar

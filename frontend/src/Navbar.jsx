@@ -10,7 +10,7 @@ function NavBar() {
     return (
         <Navbar expand="lg" className = "bg-body-tertiary fixed top w-100" style={{ margin: 0, padding: 0 }}>
             {/*fluid container helps navbar to expand entire width*/}
-            <Container fluid>
+            <Container fluid className="w-100">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="justify-content-center w-100">

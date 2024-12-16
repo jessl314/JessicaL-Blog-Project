@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
-import JessicaImage from './assets/JessicaHeadShot.jpg'
+import JessicaImage from '../assets/JessicaHeadShot.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -16,7 +16,7 @@ function Home () {
                 </Card.Text>
             </Card.Body>
             <Card.Body>
-                <Card.Link href="/assets/Liao,Jessica_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</Card.Link>
+                <Card.Link href="../assets/Liao,Jessica_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</Card.Link>
             </Card.Body>
         </Card>
     )

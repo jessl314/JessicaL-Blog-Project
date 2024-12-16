@@ -1,0 +1,12 @@
+.card-container {
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    height: 100vh;
+}
+
+.card {
+    width: 18rem;
+    margin: 20px;
+    color: rgb(211, 154, 211);
+}

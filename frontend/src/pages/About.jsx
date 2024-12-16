@@ -2,11 +2,12 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card'
 import JessicaImage from '../assets/JessicaHeadShot.jpg'
+import './About.css'
 
 function About () {
     return (
-        // <img src={JessicaImage} alt="A headshot of Jessica wearing a red jacket and a yellow shirt." className="img-fluid thumbnail"/>
-        <Card style={{ width: '18rem'}}>
+    <div className="card-container">
+        <Card className="card">
             <Card.Img variant="top" src={JessicaImage} />
             <Card.Body>
                 <Card.Title>Jessica Liao</Card.Title>
@@ -18,6 +19,7 @@ function About () {
                 <Card.Link href="/Liao,Jessica_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</Card.Link>
             </Card.Body>
         </Card>
+    </div>
     )
 
 }

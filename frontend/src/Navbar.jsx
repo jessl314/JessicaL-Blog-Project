@@ -5,8 +5,14 @@ import { Link } from 'react-router-dom';
 /*
 Navbar:
     - large screen: full form
-     - small screens: nav bar will collapse into toggable menu
+    - small screens: nav bar will collapse into toggable menu
+    - appears on top of screen
+    - all page links are centered
+
+TODO:
+    - style the nav bar!!
 */ 
+
 function NavBar() {
     return (
         <Navbar expand="lg" className = "bg-body-tertiary fixed top w-100" style={{ margin: 0, padding: 0 }}>

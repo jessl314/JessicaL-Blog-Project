@@ -20,7 +20,7 @@ Navbar
 Bootstrap: Handles the visual design and helps users switch between menu items (links).
 React Router: Handles the functional side—it determines which component to render when a user clicks on a menu item, enabling dynamic updates to the view.
 
-for the projects: I think we will have a Projects tab which when hovered over will be a dropdown menu from which we can specify Speepy and Grin project
+for the projects: I think we will have a Projects tab which when hovered over will be a dropdown menu from which we can specify Speepy and Grin project DONE!!
 
 for grin, I think it'll be more about the learning experience vs what I actually contributed (nothing) lol. I also will not link the actual repository since it would have to be public ( no trouble for me!!!). instead I will have screenshots I think and then explain like oh I learned clases, overloaded functions idk. then after Neet or whoever looks at it I will remove the route and tab. for video game project I can then include the itch link, a demo video maybe, unity screen shots, talk about what I learned about github, collaborating with non-technical people etc.
 after neet looks at it I think I can replace the grin program with the blog project, focusing more on my experience coding my portfolio what I learned etc. instead of you know the actual blog.  this could be good for the future just so people can see the extent of my learning and passion to self-learn hehe

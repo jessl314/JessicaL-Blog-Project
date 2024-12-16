@@ -9,6 +9,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+/* all page routes will be created here. the navigation menu/interface is in NavBar */
+
 function App() {
   
   return (

@@ -35,6 +35,14 @@ function App() {
 
     <NavBar />
     <h1>App</h1>
+    <Router>
+      <NavigationBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} /> */}
+      </Routes>
+    </Router>
     </>
   )
 }

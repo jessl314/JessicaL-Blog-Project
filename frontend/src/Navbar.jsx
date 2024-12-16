@@ -19,8 +19,8 @@ function NavBar() {
                         <Nav.Link href="#about">About Me</Nav.Link>
                         {/*Projects Dropdown Component, each element is a project that I want to showcase */}
                         <NavDropdown title="Projects" id = "basic-nav-dropdown">
-                            <NavDropdown.Item href="/Speepy">Speepy</NavDropdown.Item>
-                            <NavDropdown.Item href="/Grin">Grin</NavDropdown.Item>
+                            <NavDropdown.Item href="#Speepy">Speepy</NavDropdown.Item>
+                            <NavDropdown.Item href="#Grin">Grin</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

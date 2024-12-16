@@ -2,11 +2,26 @@
     display: flex;
     justify-content: left;
     align-items: top;
-    height: 100vh;
+    height: 80vh;
+    width: 18rem;
 }
 
 .card {
     width: 18rem;
     margin: 20px;
-    color: rgb(211, 154, 211);
+    background-color: rgb(211, 154, 211);
+}
+
+.about-me {
+    padding: 1rem;                  
+    margin: 1rem;                   
+    width: 80%;                     
+    /* background-color: #f9f9f9;      */
+    /* border-radius: 8px;              */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+}
+.about-me-title {
+    font-size: 1.5rem;               
+    font-weight: bold;               
+    margin-bottom: 1rem;  
 }

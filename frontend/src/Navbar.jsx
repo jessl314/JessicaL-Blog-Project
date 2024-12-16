@@ -16,10 +16,10 @@ function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="justify-content-center w-100">
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link href="#about">About Me</Nav.Link>
+                        <Nav.Link as={Link} to="/about">About Me</Nav.Link>
                         {/*Projects Dropdown Component, each element is a project that I want to showcase */}
                         <NavDropdown title="Projects" id = "basic-nav-dropdown">
-                            <NavDropdown.Item href="#Speepy">Speepy</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/Speepy">Speepy</NavDropdown.Item>
                             <NavDropdown.Item href="#Grin">Grin</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>

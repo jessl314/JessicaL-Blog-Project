@@ -13,8 +13,6 @@ function App() {
   
   return (
     <>
-    {/* <NavBar /> */}
-    <h1>App</h1>
     <Router>
       <NavBar />
       <Routes>

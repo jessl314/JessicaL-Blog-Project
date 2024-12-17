@@ -29,3 +29,9 @@
 .about-me-title {
     margin-left: -20px;
 }
+
+.social-container {
+    position: relative;
+    top: -20px; /* Moves icons upward */
+    right: 10px; /* Moves icons slightly to the right */
+  }

@@ -7,7 +7,7 @@ import './About.css'
 function About () {
     return (
     <Container className="mt-5">
-      <Row className="align-items-top justify-content-center">
+      <Row className="align-items-start justify-content-center">
           <Col xs={12} md={6}>
             <Card className="card">
               <Card.Img variant="top" src={JessicaImage} />

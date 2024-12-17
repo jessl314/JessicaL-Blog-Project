@@ -5,7 +5,7 @@ import { FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa";
 
 const SocialButtons = () => {
     return (
-        <Row className="justify-content-center mt-4">
+        <Row className="justify-content-end mt-4 me-3">
             <Col xs={4} md={2} className="d-flex justify-content-center mb-2">
                 <a href ="https://www.instagram.com/chamomiletea314/" target="_blank" rel="noopener noreferrer">
                     <Button variant="light" className="rounded-circle">

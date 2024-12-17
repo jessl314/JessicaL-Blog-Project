@@ -6,8 +6,8 @@ import './About.css'
 
 function About () {
     return (
-    <Container className="my-section">
-      <Row className="justify-content-center">
+    <Container className="d-flex justify-content-center">
+      <Row>
         <div className="card-container">
           <Col xs={12} md={6}>
             <Card className="card">

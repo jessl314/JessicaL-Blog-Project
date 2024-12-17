@@ -7,9 +7,9 @@ import './About.css'
 function About () {
     return (
     <Container className="my-section">
-      <Row>
+      <Row className="justify-content-center">
         <div className="card-container">
-          <Col md={6}>
+          <Col xs={12} md={6}>
             <Card className="card">
               <Card.Img variant="top" src={JessicaImage} />
               <Card.Body>
@@ -26,7 +26,7 @@ function About () {
         </div>
        
         <div className="about-me">
-          <Col md={6}>
+          <Col xs={12} md={6}>
           <h2 className="about-me-title">About Me</h2>
           <p>Hello World! My name is Jessica Liao and I am a current second-year Computer Science Major at UCI. I love to learn and have become proficient in Python, C++ and most recently React! Outside of classes, I have collaborated on a project in Video Game Development Club, I am a Logistics Organizer for Venushacks and so much more! </p>
           <p>For fun, I like to read, watch tv, crochet and try new foods (I also really like boba!) </p>

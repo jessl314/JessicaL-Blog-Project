@@ -6,6 +6,23 @@
     height: 50vh;
 }
 
+.card-img {
+    object-fit: cover;
+    height: 200px; /* Adjust the image height */
+    width: 100%;
+}
+
+.card-body {
+    flex-grow: 1; /* Ensures the content scales within the card */
+}
+
+.card-title {
+    font-size: 2rem;
+}
+  
+  .card-text {
+    font-size: 1rem;
+}
 .about-me {
     margin-left: -10px;
 }

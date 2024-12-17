@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Container, Row, Col } from "react-bootstrap"
 import JessicaImage from '../assets/JessicaHeadShot.jpg'
 import './About.css'
+import SocialButtons from './AboutSocial';
 
 function About () {
     return (
@@ -31,9 +32,9 @@ function About () {
           <p>For fun, I like to read, watch tv, crochet and try new foods (I also really like boba!) </p>
           </Col>
       </Row>
+      <SocialButtons/>
     </Container>
     )
-
 }
 
 export default About

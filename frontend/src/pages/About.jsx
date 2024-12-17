@@ -8,8 +8,8 @@ function About () {
     return (
     <Container className="mt-5">
       <Row className="align-items-start justify-content-center">
-          <Col xs={12} md={6}>
-            <Card className="card">
+          <Col xs={12} md={6} className="d-flex justify-content-center mb-4">
+            <Card style={{ width: "18rem"}}>
               <Card.Img variant="top" src={JessicaImage} />
               <Card.Body>
                 <Card.Title>Jessica Liao</Card.Title>
@@ -22,7 +22,7 @@ function About () {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={12} md={6} className="about-me">
+          <Col xs={12} md={6} className="text-start">
           <h2 className="about-me-title">About Me</h2>
           <p>Hello World! My name is Jessica Liao and I am a current second-year Computer Science Major at UCI. I love to learn and have become proficient in Python, C++ and most recently React! Outside of classes, I have collaborated on a project in Video Game Development Club, I am a Logistics Organizer for Venushacks and so much more! </p>
           <p>For fun, I like to read, watch tv, crochet and try new foods (I also really like boba!) </p>

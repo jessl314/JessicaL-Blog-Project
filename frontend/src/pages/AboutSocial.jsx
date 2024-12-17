@@ -6,7 +6,7 @@ import './About.css'
 
 const SocialButtons = () => {
     return (
-        <Row className="justify-content-end mt-4 me-2 social container">
+        <Row className="justify-content-end mt-4 social container">
             <Col xs={4} md={2} className="d-flex justify-content-center mb-2">
                 <a href ="https://www.instagram.com/chamomiletea314/" target="_blank" rel="noopener noreferrer">
                     <Button variant="light" className="rounded-circle">

@@ -6,9 +6,11 @@ import './About.css'
 
 function About () {
     return (
+    // using Bootstrap Grid system to align my picture card and about me in one row and my social media/github in another
     <Container className="mt-5">
       <Row className="align-items-start justify-content-center">
           <Col xs={12} md={6} className="d-flex justify-content-center mb-4">
+           {/* card component, contains my picture and a link to my resume */}
             <Card className="card d-flex flex-column">
               <Card.Img variant="top" src={JessicaImage} className="card-img" />
               <Card.Body className="d-flex flex-column justify-content-between">
@@ -22,6 +24,7 @@ function About () {
               </Card.Body>
             </Card>
           </Col>
+          {/* my elevator pitch/about me */}
           <Col xs={12} md={6} className="about-me">
           <h2 className="about-me-title">About Me</h2>
           <p>Hello World! My name is Jessica Liao and I am a current second-year Computer Science Major at UCI. I love to learn and have become proficient in Python, C++ and most recently React! Outside of classes, I have collaborated on a project in Video Game Development Club, I am a Logistics Organizer for Venushacks and so much more! </p>

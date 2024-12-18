@@ -6,25 +6,25 @@ import './About.css'
 
 const SocialButtons = () => {
     return (
-        <Row className="justify-content-end mt-n20">
+        <Row className="justify-content-end position-relative" style={{ top: '-40%' }}>
             <Col xs={4} md={2} className="d-flex justify-content-center mb-2">
                 <a href ="https://www.instagram.com/chamomiletea314/" target="_blank" rel="noopener noreferrer">
                     <Button variant="light" className="rounded-circle">
-                    <FaInstagram size={24} color="black"/>
+                    <FaInstagram size={48} color="black"/>
                     </Button>
                 </a>
             </Col>
             <Col xs={4} md={2} className="d-flex justify-content-center mb-2">
                 <a href ="https://www.linkedin.com/in/jessica-liao-089359244" target="_blank" rel="noopener noreferrer">
                     <Button variant="light" className="rounded-circle">
-                    <FaLinkedin size={24} color="black"/>
+                    <FaLinkedin size={48} color="black"/>
                     </Button>
                 </a>
             </Col>
             <Col xs={4} md={2} className="d-flex justify-content-center mb-2">
                 <a href ="https://github.com/jessl314" target="_blank" rel="noopener noreferrer">
                     <Button variant="light" className="rounded-circle">
-                    <FaGithub size={24} color="black"/>
+                    <FaGithub size={48} color="black"/>
                     </Button>
                 </a>
             </Col>

@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Container, Row, Col } from "react-bootstrap"
+import Image from 'react-bootstrap/Image'
 import JessicaImage from '../assets/JessicaHeadShot.jpg'
 import './About.css'
 import SocialButtons from './AboutSocial';
@@ -12,7 +13,7 @@ function About () {
       <Row className="align-items-start justify-content-center">
           <Col xs={12} md={6} className="d-flex justify-content-center mb-4">
            {/* card component, contains my picture and a link to my resume */}
-           <img src={JessicaImage} alt="..." class="img-thumbnail"></img>
+           <Image roundedCircle fluid src={JessicaImage} alt="me" width="60%" height = "60%"/>
           </Col>
           {/* my elevator pitch/about me */}
           <Col xs={12} md={6}>

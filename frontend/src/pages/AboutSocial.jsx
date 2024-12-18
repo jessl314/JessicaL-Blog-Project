@@ -6,7 +6,7 @@ import './About.css'
 
 const SocialButtons = () => {
     return (
-        <Row className="justify-content-end position-relative" style={{ top: '-40%' }}>
+        <Row className="mb-6 justify-content-end">
             <Col xs={4} md={2} className="d-flex justify-content-center mb-2">
                 <a href ="https://www.instagram.com/chamomiletea314/" target="_blank" rel="noopener noreferrer">
                     <Button variant="light" className="rounded-circle">

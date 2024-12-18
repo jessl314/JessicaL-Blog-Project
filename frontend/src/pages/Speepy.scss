@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+$primary-font: 'Lora', serif;
+
+// text font for About me page
+
+p {
+    font-family: $primary-font;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: $primary-font;
+    font-weight: 700;
+}
+
+.speepy-title {
+    text-align: left;
+}

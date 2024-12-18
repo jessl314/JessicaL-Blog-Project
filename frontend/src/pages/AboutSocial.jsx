@@ -6,30 +6,23 @@ import './About.scss'
 
 const SocialButtons = () => {
     return (
-        <Row className="mb-6 justify-content-end">
-            <Col xs={4} md={2} className="d-flex justify-content-center mb-2">
-                <a href ="https://www.instagram.com/chamomiletea314/" target="_blank" rel="noopener noreferrer">
-                    <Button variant="light" className="rounded-circle">
-                    <FaInstagram size={48} color="black"/>
-                    </Button>
-                </a>
-            </Col>
-            <Col xs={4} md={2} className="d-flex justify-content-center mb-2">
-                <a href ="https://www.linkedin.com/in/jessica-liao-089359244" target="_blank" rel="noopener noreferrer">
-                    <Button variant="light" className="rounded-circle">
-                    <FaLinkedin size={48} color="black"/>
-                    </Button>
-                </a>
-            </Col>
-            <Col xs={4} md={2} className="d-flex justify-content-center mb-2">
-                <a href ="https://github.com/jessl314" target="_blank" rel="noopener noreferrer">
-                    <Button variant="light" className="rounded-circle">
-                    <FaGithub size={48} color="black"/>
-                    </Button>
-                </a>
-            </Col>
-        </Row>
-        
+        <>
+            <a href ="https://www.instagram.com/chamomiletea314/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <Button variant="light" className="rounded-circle social-button">
+                <FaInstagram size={64} color="black"/>
+                </Button>
+            </a>
+            <a href ="https://www.linkedin.com/in/jessica-liao-089359244" target="_blank" rel="noopener noreferrer" title="Linkedin">
+                <Button variant="light" className="rounded-circle social-button">
+                <FaLinkedin size={64} color="black"/>
+                </Button>
+            </a>
+            <a href ="https://github.com/jessl314" target="_blank" rel="noopener noreferrer" title="Github">
+                <Button variant="light" className="rounded-circle social-button">
+                <FaGithub size={64} color="black"/>
+                </Button>
+            </a>
+        </>
     );
 };
 export default SocialButtons

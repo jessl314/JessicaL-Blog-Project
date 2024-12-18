@@ -4,9 +4,23 @@ $primary-font: 'Lora', serif;
 
 p {
     font-family: $primary-font;
+    font-weight: 400;
 }
 
 h2 {
     font-family: $primary-font;
+    font-weight: 700;
 }
 
+.social-button {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem 2rem;
+    align-items: center;
+}
+
+
+// background-color: lightgray;
+// &:hover {
+//   background-color: gray;
+// }

@@ -2,7 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Button } from 'react-bootstrap';
 import { FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa";
-import './About.css'
+import './About.scss'
 
 const SocialButtons = () => {
     return (

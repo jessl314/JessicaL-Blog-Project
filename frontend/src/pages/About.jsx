@@ -4,6 +4,7 @@ import { Card, Container, Row, Col } from "react-bootstrap"
 import Image from 'react-bootstrap/Image'
 import JessicaImage from '../assets/JessicaHeadShot.jpg'
 import SocialButtons from './AboutSocial';
+import "./About.scss"
 
 function About () {
     return (

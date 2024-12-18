@@ -23,15 +23,5 @@
   .card-text {
     font-size: 1rem;
 }
-.about-me {
-    margin-left: -20px;
-}
-.about-me-title {
-    margin-left: -20px;
-}
 
-.social-container {
-    position: relative;
-    margin-top: -20px; /* Moves icons upward */
-    right: 10px; /* Moves icons slightly to the right */
-  }
+

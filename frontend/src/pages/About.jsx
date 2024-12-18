@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Container, Row, Col } from "react-bootstrap"
 import Image from 'react-bootstrap/Image'
 import JessicaImage from '../assets/JessicaHeadShot.jpg'
-import './About.css'
 import SocialButtons from './AboutSocial';
 
 function About () {

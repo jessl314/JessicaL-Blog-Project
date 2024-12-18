@@ -12,15 +12,7 @@ function About () {
       <Row className="align-items-start justify-content-center">
           <Col xs={12} md={6} className="d-flex justify-content-center mb-4">
            {/* card component, contains my picture and a link to my resume */}
-            <Card className="card d-flex flex-column">
-              <Card.Img variant="top" src={JessicaImage} className="card-img" />
-              <Card.Body className="d-flex flex-column justify-content-between">
-                <Card.Title>Jessica Liao</Card.Title>
-                <Card.Text>
-                    Click below to view my current resume and learn more about my professional journey!
-                </Card.Text>
-              </Card.Body>
-            </Card>
+           <img src={JessicaImage} alt="..." class="img-thumbnail"></img>
           </Col>
           {/* my elevator pitch/about me */}
           <Col xs={12} md={6}>

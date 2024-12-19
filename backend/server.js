@@ -12,7 +12,7 @@ function DisplayImage() {
     const query = 'Cats';
     /* 
     1. search for the cat images with only one photo per response and then with this response
-    2. if there are photos in the response then the image will be set to the first one that is returned and it will be in the original size. 
+    2. if there are photos in the response then the image will be set to the first one that is returned and it will be in the original size. the corresponding photographer will also be set
     3. else if there is an error it will be caught with the corresponding console message 
     */
     useEffect(() => {
@@ -26,8 +26,8 @@ function DisplayImage() {
     /*the function will return and display an image if the imageURL exists, otherwise it will render a p element stating that a cat image is being loaded*/
     return (
         <div className="gen-image-cat">
-            {imageURL ? (<img src={imageURL} alt="Pexels Cat" style={{ maxWidth: '80%', height: '60%' }} />):(<p>Loading Cat...</p>)}
-            {/* credits the photographer */}
+            {imageURL ? (<img src={imageURL} alt="random cat image generated from Pexels API" style={{ maxWidth: '80%', height: '60%' }} />):(<p>Loading Cat...</p>)}
+            {/* credits the photographer for each image generated */}
             {imageURL && (<p>Photo by {imagePhotographer} on Pexels
             </p>)}
 

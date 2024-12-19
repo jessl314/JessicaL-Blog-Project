@@ -13,13 +13,15 @@ const pexelsAPIKey = 'eLaNYZUymi9Rxf39jlIChTmvokyrbZENPyQEbQKPmRhTaIhwYYfRjrHb';
 app.get('/api/cat-image', async (req, res) => {
     try {
         const query = 'Cats';
+        const randomPage = Math.floor(Math.random() * 100) + 1;
         const response = await axios.get('https://api.pexels.com/v1/search', {
             headers: {
                 Authorization: pexelsAPIKey
             },
             params: {
                 query,
-                per_page: 1
+                per_page: 1,
+                page: randomPage
             }
         });
 
@@ -29,6 +31,7 @@ app.get('/api/cat-image', async (req, res) => {
                 imageURL: response.data.photos[0].src.original,
                 imagePhotographer: response.data.photos[0].photographer
             });
+            console.log({imageURL})
         } else {
             // resource not found
             res.status(404).json({ error: 'No images found'});

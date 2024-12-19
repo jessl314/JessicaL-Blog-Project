@@ -7,6 +7,7 @@ import Speepy from './pages/Speepy.jsx';
 import ImageGen from './pages/ImageGen.jsx';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DisplayImage from './pages/DisplayImage.jsx';
 
 
 /* all page routes will be created here. the navigation menu/interface is in NavBar */
@@ -21,7 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Speepy" element={<Speepy />} />
-        <Route path="/DisplayImage" element={<ImageGen />} />
+        <Route path="/DisplayImage" element={<DisplayImage />} />
       </Routes>
     </Router>
     </>

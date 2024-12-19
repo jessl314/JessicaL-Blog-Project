@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect} from 'react';
 
-function ImageGen() {
+function ImageGen({imageKey}) {
     const [imageURL, setImageURL] = useState(null);
     const [imagePhotographer, setImagePhotographer] = useState('');
 
@@ -17,7 +17,7 @@ function ImageGen() {
         .catch(error => {
             console.error('Error fetching cat image: ', error);
         });
-    }, []);
+    }, [imageKey]);
 
     return (
         <div className="gen-image-cat">

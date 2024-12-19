@@ -4,6 +4,7 @@ import NavBar from './Navbar.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Speepy from './pages/Speepy.jsx';
+import ImageGen from './pages/ImageGen.jsx';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Speepy" element={<Speepy />} />
+        <Route path="/ImageGen" element={<ImageGen />} />
       </Routes>
     </Router>
     </>

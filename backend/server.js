@@ -26,6 +26,7 @@ function DisplayImage() {
     /*the function will return and display an image if the imageURL exists, otherwise it will render a p element stating that a cat image is being loaded*/
     return (
         <div className="gen-image-cat">
+            
             {imageURL ? (<img src={imageURL} alt="random cat image generated from Pexels API" style={{ maxWidth: '80%', height: '60%' }} />):(<p>Loading Cat...</p>)}
             {/* credits the photographer for each image generated */}
             {imageURL && (<p>Photo by {imagePhotographer} on Pexels

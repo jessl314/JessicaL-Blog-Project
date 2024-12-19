@@ -18,7 +18,7 @@ app.get('/api/cat-image', async (req, res) => {
                 key: pixaBayAPIKey,
                 q: query,
                 image_type: 'photo',
-                per_page: 3,
+                per_page: 20,
             }
         });
 

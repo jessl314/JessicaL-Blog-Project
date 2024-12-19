@@ -24,9 +24,8 @@ function DisplayImage () {
        {/* if shonwImage is true, then the DisplayImage component will be executed otherwise it won't */}
        {showImage && <ImageGen imageKey={imageKey} />}
        
-       {/* credit to Pexels */}
-      
-
+       {/* credit to Pixabay */}
+       <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer" className="styled-link">Photos provided by Pixabay</a> 
        </>
     )  
 

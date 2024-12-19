@@ -8,7 +8,7 @@ const port = 5000;
 app.use(cors());
 
 const pixaBayAPIKey = '47745339-b5ac535ed90ab426c13aaa83c';
-
+/* the application is getting data using the search query Cats. I have added a random page parameter to make sure that each cat picture is "randomly" chosen */
 // res: response object
 app.get('/api/cat-image', async (req, res) => {
     try {
@@ -23,7 +23,8 @@ app.get('/api/cat-image', async (req, res) => {
                 page: randomPage,
             }
         });
-
+        // image url is to generate the actual image
+        // image photographer is to credit the user that uploaded the photo to Pixabay
         const imageURL = response.data.hits[0].webformatURL;
         const imagePhotographer = response.data.hits[0].user;
         res.json({imageURL, imagePhotographer})
@@ -34,6 +35,8 @@ app.get('/api/cat-image', async (req, res) => {
     }
 });
 
+// lets programmer know that the server is running
+// to run, cd to the backend folder and use the command "node server.js"
 app.listen(port, () => {
     console.log('Server running on http://localhost:$5000')
 })

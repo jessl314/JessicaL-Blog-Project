@@ -13,12 +13,14 @@ const pixaBayAPIKey = '47745339-b5ac535ed90ab426c13aaa83c';
 app.get('/api/cat-image', async (req, res) => {
     try {
         const query = 'Cats';
+        const randomPage = Math.floor(Math.random() * 100) + 1;
         const response = await axios.get('https://pixabay.com/api/', {
             params: {
                 key: pixaBayAPIKey,
                 q: query,
                 image_type: 'photo',
                 per_page: 20,
+                page: randomPage,
             }
         });
 

@@ -15,7 +15,7 @@ app.get('/api/cat-image', async (req, res) => {
         const query = 'Cats';
         const response = await axios.get('https://api.pexels.com/v1/search', {
             headers: {
-                Authorization: pexelsAPIKey
+                Authorization: 'Bearer ${pexelsAPIKey}'
             },
             params: {
                 query,

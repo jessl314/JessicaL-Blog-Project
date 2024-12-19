@@ -2,14 +2,16 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from "react-bootstrap"
 import ImageGen from './ImageGen';
-import { useState} from 'react';
+import { useState, useEffect } from 'react';
 
 
 function DisplayImage () {
     const [showImage, setShowImage] = useState(false);
+    const [imageKey, setImageKey] = useState(0);
     // when button is clicked, showImage = true, meaning that we should show image
     const handleButtonClick = () => {
-        setShowImage(prevState => !prevState);
+        setShowImage(true);
+        setImageKey(prevKey = prevKey + 1);
     };
 
     return (
@@ -20,10 +22,11 @@ function DisplayImage () {
        <Button variant="light" className="rounded-circle" onClick={handleButtonClick}>Show Cat!</Button>
 
        {/* if showImage is true, then the DisplayImage component will be executed otherwise it won't */}
-       {showImage && <ImageGen />}
+       {showImage && <ImageGen key={imageKey} />}
        
        {/* credit to Pexels */}
       
+
        </>
     )  
 

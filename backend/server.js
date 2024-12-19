@@ -13,7 +13,6 @@ const pexelsAPIKey = 'eLaNYZUymi9Rxf39jlIChTmvokyrbZENPyQEbQKPmRhTaIhwYYfRjrHb';
 app.get('/api/cat-image', async (req, res) => {
     try {
         const query = 'Cats';
-        const randomPage = Math.floor(Math.random() * 100) + 1;
         const response = await axios.get('https://api.pexels.com/v1/search', {
             headers: {
                 Authorization: pexelsAPIKey
@@ -21,7 +20,6 @@ app.get('/api/cat-image', async (req, res) => {
             params: {
                 query,
                 per_page: 1,
-                page: randomPage
             }
         });
 

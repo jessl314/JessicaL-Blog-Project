@@ -1,40 +1,45 @@
-import React from 'react';
-import {useState, useEffect} from 'react';
-import { createClient } from 'pexels';
+const express = require('express');
+const cors = require('cors');
+const axios = require('axios');
 
-// my API key
-const client = createClient('eLaNYZUymi9Rxf39jlIChTmvokyrbZENPyQEbQKPmRhTaIhwYYfRjrHb');
+const app = express();
+const port = 5000;
 
-// function that calls the Pexels API, searches for a cat image and displays it to screen
-function DisplayImage() {
-    const [imageURL, setImageURL] = useState(null);
-    const [imagePhotographer, setImagePhotographer] = useState('');
-    const query = 'Cats';
-    /* 
-    1. search for the cat images with only one photo per response and then with this response
-    2. if there are photos in the response then the image will be set to the first one that is returned and it will be in the original size. the corresponding photographer will also be set
-    3. else if there is an error it will be caught with the corresponding console message 
-    */
-    useEffect(() => {
-        client.photos.search({ query, per_page: 1 }).then(response => {
-            if (response.photos.length > 0) {
-                setImageURL(response.photos[0].src.original)
-                setImagePhotographer(response.photos[0].photographer)
+app.use(cors());
+
+const pexelsAPIKey = 'eLaNYZUymi9Rxf39jlIChTmvokyrbZENPyQEbQKPmRhTaIhwYYfRjrHb';
+
+// res: response object
+app.get('/api/cat-image', async (req, res) => {
+    try {
+        const query = 'Cats';
+        const response = await axios.get('https://api.pexels.com/v1/search', {
+            headers: {
+                Authorization: pexelsAPIKey
+            },
+            params: {
+                query,
+                per_page: 1
             }
-        }).catch(error => console.error('Error fetching cat image:', error));
-    }, []);
-    /*the function will return and display an image if the imageURL exists, otherwise it will render a p element stating that a cat image is being loaded*/
-    return (
-        <div className="gen-image-cat">
-            
-            {imageURL ? (<img src={imageURL} alt="random cat image generated from Pexels API" style={{ maxWidth: '80%', height: '60%' }} />):(<p>Loading Cat...</p>)}
-            {/* credits the photographer for each image generated */}
-            {imageURL && (<p>Photo by {imagePhotographer} on Pexels
-            </p>)}
+        });
 
-        </div>
+        if (response.data.photos.length > 0) {
+            // the data response that we get
+            res.json({
+                imageURL: response.data.photos[0].src.original,
+                imagePhotographer: response.data.photos[0].photographer
+            });
+        } else {
+            // resource not found
+            res.status(404).json({ error: 'No images found'});
+        }
+    } catch (error) {
+        console.error('Error fetching cat image: ', error);
+        // internal server error
+        res.status(500).json({ error: 'Error fetching data from Pexels'});
+    }
+});
 
-    );
-}
-
-export default DisplayImage;
+app.listen(port, () => {
+    console.log('Server running on http://localhost:$5000')
+})

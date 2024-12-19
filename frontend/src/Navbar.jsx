@@ -28,7 +28,7 @@ function NavBar() {
                             <NavDropdown.Item as={Link} to="/Speepy">Speepy</NavDropdown.Item>
                             <NavDropdown.Item href="#Grin">Grin</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link as={Link} to="/ImageGen">Cat!</Nav.Link>
+                        <Nav.Link as={Link} to="/DisplayImage">Cat!</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

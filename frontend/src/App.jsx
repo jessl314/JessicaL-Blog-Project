@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Speepy" element={<Speepy />} />
-        <Route path="/ImageGen" element={<ImageGen />} />
+        <Route path="/DisplayImage" element={<ImageGen />} />
       </Routes>
     </Router>
     </>

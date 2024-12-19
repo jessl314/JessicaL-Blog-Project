@@ -13,7 +13,7 @@ const pixaBayAPIKey = '47745339-b5ac535ed90ab426c13aaa83c';
 app.get('/api/cat-image', async (req, res) => {
     try {
         const query = 'Cats';
-        const response = await axios.get('https://api.pexels.com/v1/search', {
+        const response = await axios.get('https://pixabay.com/api/', {
             params: {
                 key: pixaBayAPIKey,
                 q: query,

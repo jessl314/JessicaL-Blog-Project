@@ -13,11 +13,6 @@ function Speepy () {
                     <h1 className="speepy-title">Speepy</h1>
                     <p> Check out <a href="https://itch.io/jam/vgdc-at-uci-fall-2024-games/rate/3151721" target="_blank" rel="noopener noreferrer" className="styled-link">Speepy</a>here!</p>
                     {/* slide component + a little caption */}
-                   <img src={SpeepyTitle}/>
-                   <p>title screen of speepy</p>
-                   <img src={SpeepyBedroom}/>
-                   <p>main game screen</p>
-                    
                 </Col>
                 <Col xs={8} md={4} className="d-flex justify-content-start mb-4 ms-0">
                    <h3>Premise and Contribution</h3>
@@ -31,8 +26,16 @@ function Speepy () {
                     </p>
 
                 </Col>
-                
             </Row>
+            <Row className="align-items-start justify-content-start">
+            <img src={SpeepyTitle}/>
+            <p>title screen of speepy</p>
+            </Row>
+            <Row className="align-items-start justify-content-start">
+            <img src={SpeepyBedroom}/>
+            <p>main game screen</p>
+            </Row>
+            
             
         </Container>
     )  

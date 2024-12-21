@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect} from 'react';
 
+// TODO: find out why sometimes there is errors and sometimes not
+
 function ImageGen({imageKey}) {
     const [imageURL, setImageURL] = useState(null);
     const [imagePhotographer, setImagePhotographer] = useState('');

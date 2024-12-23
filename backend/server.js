@@ -14,13 +14,14 @@ app.get('/api/cat-image', async (req, res) => {
     try {
         const query = 'Cats';
 
-
+        // we use an initial API call to determine the max number of pages that can be requested based on the total number of images accessible through the API for the query and the per_page parameter
+        // this is to avoid accessing a page number that is out of range/non-existent
         const initialResponse = await axios.get('https://pixabay.com/api/', {
             params: {
                 key: pixaBayAPIKey,
                 q: query,
                 image_type: 'photo',
-                per_page: 3, // Only 1 result needed to calculate total pages
+                per_page: 3, // minimum 3 results needed per page
             },
         });
 
@@ -30,6 +31,7 @@ app.get('/api/cat-image', async (req, res) => {
 
 
         const randomPage = Math.floor(Math.random() * maxPage) + 1;
+
         const response = await axios.get('https://pixabay.com/api/', {
             params: {
                 key: pixaBayAPIKey,

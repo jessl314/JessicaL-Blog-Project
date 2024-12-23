@@ -20,7 +20,7 @@ app.get('/api/cat-image', async (req, res) => {
                 key: pixaBayAPIKey,
                 q: query,
                 image_type: 'photo',
-                per_page: 1, // Only 1 result needed to calculate total pages
+                per_page: 3, // Only 1 result needed to calculate total pages
             },
         });
 
@@ -28,7 +28,7 @@ app.get('/api/cat-image', async (req, res) => {
         const perPage = 20; // Images per page
         const maxPage = Math.ceil(totalHits / perPage); 
 
-        
+
         const randomPage = Math.floor(Math.random() * 100) + 1;
         const response = await axios.get('https://pixabay.com/api/', {
             params: {

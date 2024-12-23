@@ -4,7 +4,7 @@ import NavBar from './Navbar.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Speepy from './pages/Speepy.jsx';
-import ImageGen from './pages/ImageGen.jsx';
+import Solace from './pages/Solace.jsx';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DisplayImage from './pages/DisplayImage.jsx';

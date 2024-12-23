@@ -8,3 +8,5 @@ function Solace() {
         
     
 }
+
+export default Solace;

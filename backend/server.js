@@ -29,7 +29,7 @@ app.get('/api/cat-image', async (req, res) => {
         const maxPage = Math.ceil(totalHits / perPage); 
 
 
-        const randomPage = Math.floor(Math.random() * 100) + 1;
+        const randomPage = Math.floor(Math.random() * maxPage) + 1;
         const response = await axios.get('https://pixabay.com/api/', {
             params: {
                 key: pixaBayAPIKey,

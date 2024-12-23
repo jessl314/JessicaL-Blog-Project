@@ -13,6 +13,22 @@ const pixaBayAPIKey = '47745339-b5ac535ed90ab426c13aaa83c';
 app.get('/api/cat-image', async (req, res) => {
     try {
         const query = 'Cats';
+
+
+        const initialResponse = await axios.get('https://pixabay.com/api/', {
+            params: {
+                key: pixaBayAPIKey,
+                q: query,
+                image_type: 'photo',
+                per_page: 1, // Only 1 result needed to calculate total pages
+            },
+        });
+
+        const totalHits = initialResponse.data.totalHits; // Total number of results
+        const perPage = 20; // Images per page
+        const maxPage = Math.ceil(totalHits / perPage); 
+
+        
         const randomPage = Math.floor(Math.random() * 100) + 1;
         const response = await axios.get('https://pixabay.com/api/', {
             params: {

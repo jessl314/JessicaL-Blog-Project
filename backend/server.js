@@ -25,7 +25,7 @@ app.get('/api/cat-image', async (req, res) => {
         });
 
         const totalHits = initialResponse.data.totalHits; // Total number of results
-        const perPage = 20; // Images per page
+        const perPage = 3; // Images per page
         const maxPage = Math.ceil(totalHits / perPage); 
 
 
@@ -35,7 +35,7 @@ app.get('/api/cat-image', async (req, res) => {
                 key: pixaBayAPIKey,
                 q: query,
                 image_type: 'photo',
-                per_page: 20,
+                per_page: 3,
                 page: randomPage,
             }
         });

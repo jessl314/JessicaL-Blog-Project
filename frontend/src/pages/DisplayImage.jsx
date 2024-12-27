@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap"
 import ImageGen from './ImageGen';
 import { useState, useEffect } from 'react';
 
-
+// this component displays the UI for the cat image generator
 function DisplayImage () {
     const [showImage, setShowImage] = useState(false);
     const [imageKey, setImageKey] = useState(0);
@@ -15,7 +15,7 @@ function DisplayImage () {
     };
 
     return (
-       <>
+       <div>
        <h1>cat image generator</h1>
 
        {/* this is the button. when it is clicked we will use the handleButtonClick event handler */}
@@ -26,7 +26,7 @@ function DisplayImage () {
        
        {/* credit to Pixabay */}
        <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer" className="styled-link">Photos provided by Pixabay</a> 
-       </>
+       </div>
     )  
 
 }

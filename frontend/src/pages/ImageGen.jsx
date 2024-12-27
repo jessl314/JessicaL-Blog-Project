@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, useEffect} from 'react';
 
-// TODO: find out why sometimes there is errors and sometimes not
+// this component utilized my express.js server to make calls to the Pixabay API and generate cat images
+// it also displays the individual cat image generated and credits the user/photographer that uploaded that image to Pixabay
 
 function ImageGen({imageKey}) {
     const [imageURL, setImageURL] = useState(null);

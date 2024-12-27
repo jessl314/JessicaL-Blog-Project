@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
+// text font for About me page
 $primary-font: 'Lora', serif;
 
-// text font for About me page
+
 
 .speepy-container {
-    min-height: 100vh; /* Ensure the container is at least as tall as the viewport */
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
 }

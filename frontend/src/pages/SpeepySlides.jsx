@@ -1,2 +1,13 @@
-// <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSvz6RhgCGsBD038XFOCafWg2euXuo9rV-gvGzcZi5wATDnOcUYByD9sX7fWeVh68NNRe3RE6cIzSO_/embed?start=false&loop=false&delayms=5000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-// actually I need to add this to jessica email and then redo the iframe lol
+// <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR1mjJBFr7gwosx8nywGzl3m8Ypov5ux2nZTRur-_tNzMtm3NCqfHGoKV-7b1v5JcYH5XDaVDAlLu0G/embed?start=false&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+import React from 'react'
+
+function SpeepySlides () {
+    return (
+        <div>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR1mjJBFr7gwosx8nywGzl3m8Ypov5ux2nZTRur-_tNzMtm3NCqfHGoKV-7b1v5JcYH5XDaVDAlLu0G/embed?start=false&loop=true&delayms=3000" frameborder="0" width="720" height="499" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+    )
+}
+
+export default SpeepySlides

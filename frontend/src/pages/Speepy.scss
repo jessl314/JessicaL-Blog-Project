@@ -4,6 +4,12 @@ $primary-font: 'Lora', serif;
 
 // text font for About me page
 
+.speepy-container {
+    min-height: 100vh; /* Ensure the container is at least as tall as the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
 p {
     font-family: $primary-font;
     font-weight: 400;

@@ -1,9 +1,13 @@
-$primary: #f6f1f1;
-$secondary: #d1b1b6;
-
+$primary: #efe6e6;
+$secondary: #e7dada;
+// f6f1f1
 body, #root {
     background-color: $primary;
     min-height: 100vh;
+}
+
+.navbar {
+    background-color: $secondary;  // Set the navbar's background color to your secondary color
 }
 
 

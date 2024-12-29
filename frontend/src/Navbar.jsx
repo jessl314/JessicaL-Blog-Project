@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import "./styles/main.scss"
+import "./styles/Navbar.scss"
 
 /*
 Navbar:
@@ -16,7 +17,7 @@ TODO:
 
 function NavBar() {
     return (
-        <Navbar expand="lg" className = "bg-body-secondary fixed top w-100" style={{ margin: 0, padding: 0 }}>
+        <Navbar expand="lg" className = "fixed top w-100" style={{ margin: 0, padding: 0 }}>
             {/*fluid container helps navbar to expand entire width*/}
             <Container fluid className="w-100">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

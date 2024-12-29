@@ -15,7 +15,7 @@ TODO:
 
 function NavBar() {
     return (
-        <Navbar expand="lg" className = "bg-body-tertiary fixed top w-100" style={{ margin: 0, padding: 0 }}>
+        <Navbar expand="lg" className = "bg-body-secondary fixed top w-100" style={{ margin: 0, padding: 0 }}>
             {/*fluid container helps navbar to expand entire width*/}
             <Container fluid className="w-100">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

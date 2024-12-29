@@ -1,0 +1,12 @@
+
+
+$primary: #f6f1f1;
+$secondary: #d3c5c9;
+
+body, #root {
+    background-color: $primary;
+    min-height: 100vh;
+}
+
+@import "bootstrap/scss/bootstrap";
+// #F7E4E4, a muted pink for primary

@@ -7,6 +7,7 @@ import Speepy from './pages/Speepy.jsx';
 import Solace from './pages/Solace.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DisplayImage from './pages/DisplayImage.jsx';
+import "./styles/main.scss";
 
 
 /* all page routes will be created here. the navigation menu/interface is in NavBar */

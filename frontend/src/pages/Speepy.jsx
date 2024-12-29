@@ -4,7 +4,7 @@ import SpeepySlides from './SpeepySlides';
 import { Container, Row, Col, Button } from "react-bootstrap"
 import SpeepyTitle from "../assets/speepy-title-screen.png"
 import SpeepyBedroom from "../assets/background1.png"
-import "./Speepy.scss"
+import "../styles/Speepy.scss"
 
 // this function component displays all content/components related to my Project Speepy
 function Speepy () {

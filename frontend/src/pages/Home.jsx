@@ -1,13 +1,21 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/Home.scss";
+import {Link} from "react-router-dom";
 
 function Home () {
     return (
        <div>
         {/* get rid of Hello World on my about me page */}
         <h1>Welcome to Jessica's Corner!</h1>
-        <p className="p-3 rounded intro-block">Hello World! Welcome to my personal portfolio website! Looking around you'll learn a bit more about me and some projects that I'm proud of. <br className="spacing"/> Wonder why I have a page with a cat image generator? This website is my first ever personal project! Since I wanted some experience using API's and Express.js I chose to use a simple API to display something that I like a lot, cats!</p>
+        <h5>Here are some quick access links!</h5>
+        <ol className="p-3 rounded intro-block">
+        <li><Link to="/about">About Me</Link></li>
+        <li><Link to="/DisplayImage">Cat!</Link></li>
+        <p>Projects!</p>
+        <li><Link to="/Speepy">Speepy</Link></li>
+        <li><Link to="/Solace">Solace</Link></li>
+        </ol>
 
         {/* fun facts?? a most recent achievement box?? */}
 
@@ -17,3 +25,5 @@ function Home () {
 }
 
 export default Home
+
+// keep the title but instead to a list in a box with my page links 

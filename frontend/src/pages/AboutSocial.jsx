@@ -12,7 +12,7 @@ const SocialButtons = () => {
 
         {/* Instagram button */}
             <a href ="https://www.instagram.com/chamomiletea314/" target="_blank" rel="noopener noreferrer" title="Instagram">
-                <Button variant="secondary" className="rounded-circle social-button custom-second-color">
+                <Button variant="light" className="rounded-circle social-button custom-second-color">
                 <FaInstagram size={64} color="black"/>
                 </Button>
             </a>

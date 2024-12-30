@@ -1,5 +1,12 @@
-$primary: #efe6e6;
-$secondary: #e7dada;
+
+$primary: #efe6e6;   // Custom primary color
+$secondary: #e7dada;  // Custom secondary color
+
+@use 'bootstrap/scss/bootstrap' with (
+  $primary: $primary,   // Custom primary color
+  $secondary: $secondary // Custom secondary color
+);
+
 // f6f1f1
 body, #root {
     background-color: $primary;
@@ -16,6 +23,8 @@ body, #root {
     border: none !important;
 }
 
+// $primary: #efe6e6,
+// $secondary: #e7dada
 
 
 // @import "bootstrap/scss/bootstrap";

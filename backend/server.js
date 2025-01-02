@@ -61,6 +61,10 @@ app.get('/api/cat-image', async (req, res) => {
     }
 });
 
+app.get("/:universalURL", (req, res) => {
+    res.send("404 URL NOT FOUND");
+});
+
 // lets programmer know that the server is running
 // to run, cd to the backend folder and use the command "node server.js"
 // then in a new terminal tab cd frontend and do npm run dev like normal

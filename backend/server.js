@@ -17,7 +17,7 @@ app.use(cors({
 const pixaBayAPIKey = '47745339-b5ac535ed90ab426c13aaa83c';
 /* the application is getting data using the search query Cats. I have added a random page parameter to make sure that each cat picture is "randomly" chosen */
 // res: response object
-app.get('/', async (req, res) => {
+app.get('/api/cat-image', async (req, res) => {
     try {
         const query = 'Cats';
 
@@ -52,7 +52,6 @@ app.get('/', async (req, res) => {
         // image url is to generate the actual image
         // image photographer is to credit the user that uploaded the photo to Pixabay
         const imageURL = response.data.hits[0].webformatURL;
-        console.imageURL;
         const imagePhotographer = response.data.hits[0].user;
         res.json({imageURL, imagePhotographer})
     } catch (error) {

@@ -9,7 +9,7 @@ function ImageGen({imageKey}) {
     const [imagePhotographer, setImagePhotographer] = useState('');
     // fetching from my express api
     useEffect(() => {
-        fetch('https://jessical-blog-project-2.onrender.com').then(response => response.json()).then(photos => {
+        fetch('https://jessical-blog-project-2.onrender.com/api/cat-image').then(response => response.json()).then(photos => {
             // checks if my response has an image url
             // if there is then we set the variable imageURL to the image url and imagePhotographer to the photographer
             // else write a error message to the terminal

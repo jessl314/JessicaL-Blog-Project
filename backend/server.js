@@ -3,7 +3,7 @@ const cors = require('cors');
 const axios = require('axios');
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // app.use(cors());
 
@@ -64,6 +64,7 @@ app.get('/api/cat-image', async (req, res) => {
 // lets programmer know that the server is running
 // to run, cd to the backend folder and use the command "node server.js"
 // then in a new terminal tab cd frontend and do npm run dev like normal
+
 app.listen(port, () => {
     console.log('Server running on http://localhost:$5000')
 })

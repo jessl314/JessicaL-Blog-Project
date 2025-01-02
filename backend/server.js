@@ -7,6 +7,13 @@ const port = 5000;
 
 app.use(cors());
 
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://your-site.netlify.app',
+  credentials: true,
+}));
+
+
 const pixaBayAPIKey = '47745339-b5ac535ed90ab426c13aaa83c';
 /* the application is getting data using the search query Cats. I have added a random page parameter to make sure that each cat picture is "randomly" chosen */
 // res: response object

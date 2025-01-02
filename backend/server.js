@@ -5,9 +5,9 @@ const axios = require('axios');
 const app = express();
 const port = 5000;
 
-app.use(cors());
+// app.use(cors());
 
-const cors = require('cors');
+// const cors = require('cors');
 app.use(cors({
   origin: 'https://jessicalpersonalportfolio.netlify.app',
   credentials: true,

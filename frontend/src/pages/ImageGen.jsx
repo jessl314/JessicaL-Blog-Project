@@ -15,6 +15,7 @@ function ImageGen({imageKey}) {
             // else write a error message to the terminal
             if(photos.imageURL) {
                 setImageURL(photos.imageURL);
+                console.log(imageURL);
                 setImagePhotographer(photos.imagePhotographer);
             } else {
                 console.error('no image found');

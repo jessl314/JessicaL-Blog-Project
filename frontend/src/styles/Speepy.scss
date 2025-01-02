@@ -1,9 +1,9 @@
+// text font
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-// text font for About me page
+
 $primary-font: 'Lora', serif;
 
-
-
+// to make sure that users can scroll down my page
 .speepy-container {
     min-height: 100vh; 
     display: flex;
@@ -28,24 +28,15 @@ h1 {
     text-align: left;
 }
 
+// for content under my speepy title
 .under-title {
     display: block;
     text-align: left;
 }
 
+// for the text under my premise and what I learned titles
 .premise-contribute {
     & p {
         text-indent: 2em;
     }
 }
-
-// .styled-link {
-//     color: #5A9;
-//     text-decoration: none;
-//     font-weight: bold;
-  
-//     &:hover {
-//       text-decoration: underline;
-//       color: #4A8;
-//     }
-//   }

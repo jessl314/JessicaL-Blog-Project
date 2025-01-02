@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Button } from 'react-bootstrap';
 import { FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa";
-import '../styles/About.scss'
+import '../styles/About.scss';
 
 // buttons component for the about me page, specifically, when each button is clicked, the corresponding social media/github page should open in a new tab
 
@@ -10,7 +10,6 @@ const SocialButtons = () => {
     return (
         <>
         {/* when hovering over the button, the website name should show up */}
-
         {/* Instagram button */}
             <a href ="https://www.instagram.com/chamomiletea314/" target="_blank" rel="noopener noreferrer" title="Instagram">
                 <Button className="rounded-circle social-button custom-second-color">

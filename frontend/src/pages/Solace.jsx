@@ -8,8 +8,6 @@ import "../styles/Solace.scss"
 
 function Solace() {
     return (
-// TODO: definitely need to change text, also need to load up the app for a screenshot lolz 
-        
         <Container className="mt-5">
             <Row className="align-items-start justify-content-start">
                 <Col xs={5} md={6} className="d-flex justify-content-left mb-1 ms-n6">

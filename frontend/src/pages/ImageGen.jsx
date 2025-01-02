@@ -24,7 +24,6 @@ function ImageGen({imageKey}) {
 
     return (
         <div className="gen-image-cat">
-            
             {imageURL ? (<img src={imageURL} alt="random cat image generated from Pexels API" style={{ maxWidth: '80%', height: '60%' }} />):(<p>Loading Cat...</p>)}
             {/* credits the photographer for each image generated */}
             {imageURL && (<p>Photo by {imagePhotographer} on Pixabay

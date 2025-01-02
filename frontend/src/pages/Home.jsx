@@ -6,7 +6,7 @@ import {Row, Col, Container} from "react-bootstrap";
 
 function Home () {
     return (
-        <Container>
+        <Container className="mt-5">
              <Row className="justify-content-center">
                 <Col xs={8} md={8} className="d-flex justify-content-center mb-4 ms-0">
                 <div>

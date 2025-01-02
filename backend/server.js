@@ -27,11 +27,12 @@ app.get('/api/cat-image', async (req, res) => {
 
         const totalHits = initialResponse.data.totalHits; // Total number of results
         const perPage = 3; // Images per page
-        const maxPage = Math.ceil(totalHits / perPage); 
+        const maxPage = Math.ceil(totalHits / perPage); // max page number that the api should fetch from
 
 
-        const randomPage = Math.floor(Math.random() * maxPage) + 1;
+        const randomPage = Math.floor(Math.random() * maxPage) + 1; // generating a random in range page to pick the image from
 
+        // here is the API call that will be used to actually generate the image
         const response = await axios.get('https://pixabay.com/api/', {
             params: {
                 key: pixaBayAPIKey,

@@ -1,8 +1,7 @@
+// text font
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 $primary-font: 'Lora', serif;
-
-// text font for About me page
 
 p {
     font-family: $primary-font;
@@ -14,15 +13,10 @@ h2 {
     font-weight: 700;
 }
 
+// for the background behind the media icons
 .social-button {
     width: 5rem;
     height: 5rem;
     margin: 2rem 2rem;
     align-items: center;
 }
-
-
-// background-color: lightgray;
-// &:hover {
-//   background-color: gray;
-// }

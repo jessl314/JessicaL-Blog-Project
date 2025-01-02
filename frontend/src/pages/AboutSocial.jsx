@@ -4,11 +4,12 @@ import { Row, Col, Button } from 'react-bootstrap';
 import { FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa";
 import '../styles/About.scss'
 
+// buttons component for the about me page, specifically, when each button is clicked, the corresponding social media/github page should open in a new tab
+
 const SocialButtons = () => {
     return (
         <>
-        {/* for the About Me page */}
-        {/* for all buttons, when clicked, the corresponding profile page should show up in a new tab and when hovering over the button, the website name should show up */}
+        {/* when hovering over the button, the website name should show up */}
 
         {/* Instagram button */}
             <a href ="https://www.instagram.com/chamomiletea314/" target="_blank" rel="noopener noreferrer" title="Instagram">
@@ -31,7 +32,7 @@ const SocialButtons = () => {
         </>
     );
 };
-export default SocialButtons
+export default SocialButtons;
 
 
 

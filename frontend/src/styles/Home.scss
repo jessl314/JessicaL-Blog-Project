@@ -1,22 +1,20 @@
 @use './main' as *;
+
+// text font
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 $primary-font: 'Lora', serif;
 
-
-// text font for About me page
 
 p {
     font-family: $primary-font;
     font-weight: 400;
 }
 
+// the background for my link sections
 .intro-block {
-    // padding: 0.5rem;
     background-color: $secondary;
     justify-content: center;
-    // border-radius: 0.5rem;
-    // display: inline-block;
     width: 50%;
 }
 
@@ -43,7 +41,7 @@ ul {
 }
 
 li {
-    font-size: inherit; /* Inherit the font size from the parent ul */
+    font-size: inherit; /* inherits the font size from the parent ul */
     font-family: $primary-font;
 }
 

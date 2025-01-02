@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col } from "react-bootstrap"
-import Image from 'react-bootstrap/Image'
-import JessicaImage from '../assets/JessicaHeadShot.jpg'
+import { Container, Row, Col } from "react-bootstrap";
+import Image from 'react-bootstrap/Image';
+import JessicaImage from '../assets/JessicaHeadShot.jpg';
 import SocialButtons from './AboutSocial';
-import "../styles/About.scss"
+import "../styles/About.scss";
 
+// displays the about me page
 function About () {
     return (
     // uses Bootstrip Grid system
@@ -13,8 +14,8 @@ function About () {
       <Row className="align-items-start justify-content-center">
           {/* this column is for my picture which is in a oval shaped image. It will be left of the center in web-view */}
           <Col xs={12} md={6} className="d-flex justify-content-center mb-4">
-           {/* card component, contains my picture and a link to my resume */}
-           <Image roundedCircle fluid src={JessicaImage} alt="me" width="60%" height = "60%"/>
+           {/* my picture */}
+           <Image roundedCircle fluid src={JessicaImage} alt="A headshot of Jessica wearing a yellow shirt and red jacket" width="60%" height = "60%"/>
           </Col>
           {/* my elevator pitch/about me. it will be right of center in web-view and stacked under my picture in mobile view*/}
           <Col xs={12} md={6}>
@@ -29,4 +30,4 @@ function About () {
     )
 }
 
-export default About
+export default About;

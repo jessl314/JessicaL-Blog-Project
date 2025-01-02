@@ -5,6 +5,7 @@ import ImageGen from './ImageGen';
 import { useState, useEffect } from 'react';
 import {Row, Col, Container} from "react-bootstrap";
 import "../styles/main.scss"
+import "../styles/Display.scss";
 
 // this component displays the UI for the cat image generator
 function DisplayImage () {
@@ -18,7 +19,7 @@ function DisplayImage () {
 
     return (
 
-        <Container>
+        <Container className="mt-5">
             <Col className="d-flex justify-content-center flex-column align-items-center">
                    <div className="text-center">
                     <h1>cat image generator</h1>

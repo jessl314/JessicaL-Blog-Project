@@ -17,7 +17,7 @@ app.use(cors({
 const pixaBayAPIKey = '47745339-b5ac535ed90ab426c13aaa83c';
 /* the application is getting data using the search query Cats. I have added a random page parameter to make sure that each cat picture is "randomly" chosen */
 // res: response object
-app.get('https://jessical-blog-project-2.onrender.com', async (req, res) => {
+app.get('https://jessical-blog-project-2.onrender.com/api/cat-image', async (req, res) => {
     try {
         const query = 'Cats';
 

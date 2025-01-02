@@ -24,6 +24,7 @@ function Speepy () {
                 </Col>
                 <Col xs={8} md={8} className="d-flex mb-4 ms-0">
                 {/* this div is for showing what I contributed and and what I learned */}
+                  <div>
                    <div className="premise-contribute"> 
                    <h4>Premise and Contribution</h4>
                    <p>  Speepy is a rhythm game that was created as part of UCI's Video Game Development Club Fall Quarter Pitch Projects. I was one of six programmers and contributed the most to the health system and connecting that to the beats.</p>
@@ -33,6 +34,7 @@ function Speepy () {
                     </p>
                     {/* slide deck from showcase night */}
                     <SpeepySlides/>
+                    </div>
                     <p>Slides from VGDC's showcase night!</p>
                     </div>
                 </Col>

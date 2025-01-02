@@ -3,6 +3,10 @@
 //     padding-bottom: 1rem;
 // }
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+// text font for About me page
+$primary-font: 'Lora', serif;
+
 .sollogo {
     img {
         padding-top: 1rem;
@@ -23,7 +27,28 @@
     }
 }
 
+.learnText {
+    p {
+        text-indent: 2em;
+    }
+}
+
 h1 {
     padding: 0;
     margin: 0;
+    font-family: $primary-font;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: $primary-font;
+    
+}
+
+p {
+    font-family: $primary-font;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: medium;
+    text-align: left;
 }

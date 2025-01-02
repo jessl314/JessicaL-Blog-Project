@@ -29,10 +29,6 @@ h4 {
     padding-bottom: 1rem;
     font-family: $primary-font;
 }
-// ul {
-//     justify-items: center;
-//     text-align: center;
-// }
 
 h5 {
     padding-bottom: 0.5rem;
@@ -40,13 +36,13 @@ h5 {
 }
 
 ul {
-    font-size: 1.1rem; /* Adjust size to your preference */
-    line-height: 1.8;  /* Optional: improves readability by increasing line height */
+    font-size: 1.1rem; 
+    line-height: 1.8;  
     font-family: $primary-font;
 }
 
 li {
-    font-size: inherit; /* Inherit the font size from the parent (ul/ol) */
+    font-size: inherit; /* Inherit the font size from the parent ul */
     font-family: $primary-font;
 }
 

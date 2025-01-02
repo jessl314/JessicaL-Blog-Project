@@ -1,7 +1,9 @@
 //https://devpost.com/software/solace-kysqua
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Button } from "react-bootstrap"
+import { Container, Row, Col} from "react-bootstrap";
+import SolaceLogo from "../assets/solace-logo.png";
+import SolaceScreen from "../assets/solace-example.png";
 
 function Solace() {
     return (
@@ -13,6 +15,10 @@ function Solace() {
                     <div>
                     <h1>Solace</h1>
                     <p> Check out <a href="https://devpost.com/software/solace-kysqua" target="_blank" rel="noopener noreferrer" className="styled-link">Solace</a> here!</p>
+                    <img src={SolaceLogo}/>
+                    <p>the logo for our application</p>
+                    <img src={SolaceScreen}/>
+                    <p>example entry</p>
 
                     </div>
                 </Col>
@@ -24,6 +30,7 @@ function Solace() {
                     <h3>What I learned</h3>
 
                     <p>- This was my first time ever using a framework such as React and using languages such as Typescript, CSS, and Javascript. Thus, predictably, I was not able to contribute as much. However, I did learn a lot about how to approach self-learning something new and also teamwork with another person! At the end of the hackathon, I think my interpersonal skills grew a lot as this was also a learning experience on setting realistic goals, working under pressure, and working as a team. </p>
+                    <p>- Since the inspiration for this project came from another team member, I also learned a lot about cognitive behavior, and emotions. In relation to AI, this allowed me to learn more about concepts like prompt engineering and emotion recognition.</p>
 
                     </div>
  

@@ -18,10 +18,6 @@ const pixaBayAPIKey = '47745339-b5ac535ed90ab426c13aaa83c';
 /* the application is getting data using the search query Cats. I have added a random page parameter to make sure that each cat picture is "randomly" chosen */
 // res: response object
 
-// edge case for if there is a trailing / in my link, redirect it to the correct endpoint
-app.get('/api/cat-image/', async (req, res) => {
-    res.redirect('/api/cat-image'); 
-});
 
 app.get('/api/cat-image', async (req, res) => {
     try {

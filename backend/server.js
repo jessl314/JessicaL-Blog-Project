@@ -61,6 +61,12 @@ app.get('/api/cat-image', async (req, res) => {
     }
 });
 
+// if there is a trailing /, redirect it to the correct endpoint
+app.get('/api/cat-image/', async (req, res) => {
+    res.redirect('/api/cat-image'); 
+});
+
+// catching any url that is incorrect
 app.get("/:universalURL", (req, res) => {
     res.send("404 URL NOT FOUND");
 });

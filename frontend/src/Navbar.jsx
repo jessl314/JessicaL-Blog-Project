@@ -29,7 +29,7 @@ function NavBar() {
                             <NavDropdown.Item as={Link} to="/Speepy">Speepy</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/Solace">Solace</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link as={Link} to="/DisplayImage">Cat!</Nav.Link>
+                        {/* <Nav.Link as={Link} to="/DisplayImage">Cat!</Nav.Link> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

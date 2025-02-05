@@ -23,7 +23,7 @@ function Home () {
                 </div>
                     <ul className="p-3 rounded intro-block mx-auto">
                         <li><Link to="/about">About Me</Link></li>
-                        <li><Link to="/DisplayImage">Cat!</Link></li>
+                        {/* <li><Link to="/DisplayImage">Cat!</Link></li> */}
                     </ul>
                 </div>
                 </Col>
